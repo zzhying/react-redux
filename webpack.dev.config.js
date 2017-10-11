@@ -6,6 +6,9 @@ var APP_PATH = path.resolve(ROOT_PATH, 'src'); // 项目的src目录路径
 var APP_FILE = path.resolve(APP_PATH, 'app'); // 项目的入口文件（即src/app.js）
 var BUILD_PATH = path.resolve(ROOT_PATH, '/build'); //规定打包好的文件存放到此目录下(开发模式中，我们一般配置为最终生成1个bundle.js)
 
+
+// path.resolve(__dirname, 'src')  path.join(__dirname, 'src') path.join(__dirname, './src')
+
 module.exports = {
     /* 需要被打包的文件在此配置 */
     entry: {

@@ -1,4 +1,4 @@
-var path = require('path'); // 为了得到项目根路径
+var path = require('path'); // 为了得到项目根路径, path用于处理文件与目录的路径
 var webpack = require('webpack'); // webpack核心
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); // 为了单独打包css
 var HtmlWebpackPlugin = require('html-webpack-plugin'); //根据模板生成最终html文件
