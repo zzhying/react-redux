@@ -8,3 +8,23 @@ export default class AdviserActions {
     };
   }
 }
+
+
+//异步action会被redux-thunk中间件拦截，传入dispatch，getState等参数后执行
+// export const initNotes = () => (dispatch, getState) => {
+// 	console.log('int')
+	// $.ajax({
+	// 		url : "/init",
+	// 		type : "get",
+	// 		dataType : "json",
+	// 		cache : false,
+	// 		success : function(notes){
+	// 			/*notes是从数据库读取到的笔记数组*/
+	// 			notes=notesSort(notes);
+	// 			dispatch({ type : INIT_NOTES, notes : notes });
+	// 		}.bind(this),
+	// 		error : function(){
+	// 			console.log("notes获取失败~");
+	// 		}.bind(this)
+	// 	})
+// }

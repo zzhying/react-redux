@@ -74,6 +74,20 @@ module.exports = {
             hash: false, // 是否为本页面所有资源文件添加一个独特的hash值
         }),
 
+        // new webpack.HotModuleReplacementPlugin(),
+        // new webpack.NoErrorsPlugin()
+//         new HtmlWebpackPlugin({
+//             title: 'home',
+//             filename: './app/home.html', //生成的html存放路径，相对于path
+//             template: './src/template/template.html', //html模板路径
+//             inject: 'body', //js插入的位置，true/'head'/'body'/false
+//             hash: true, //为静态资源生成hash值
+//             minify: { //压缩HTML文件
+// //                 removeComments: true, //移除HTML中的注释
+// //                 collapseWhitespace: false //删除空白符与换行符
+//             }
+//         })
+
         // 配置了这个插件，再配合上面loader中的配置，将所有样式文件打包为一个单独的css文件
         new ExtractTextPlugin('[name].css'),
 
