@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 // 所需的所有组件
-import Test from '../../components/test'; // 引入第4步创建的组件
+import Test from '../../components/test'; // 引入创建的组件
 
 
 // 本页面所需action
-import appAction from '../../actions/app.action'; // 稍后创建
+import appAction from '../../actions/app.action';
 
 // 最终要交给redux管理的所有变量
 const mapStoreStateToProps = (state) => ({
